@@ -37,7 +37,7 @@ public class Tweetbot{
 			cal = Calendar.getInstance();
 			while(cal.before(end)){			
 				try{
-					Thread.sleep(10000);
+					Thread.sleep(60000);
 					Twitter twitter = TwitterFactory.getSingleton();
 					StatusUpdate statusUpdate = new StatusUpdate("2013 HACKATHON @ToppersPizza");
 					statusUpdate.media(new File("xKE07.jpg"));
@@ -61,7 +61,7 @@ public class Tweetbot{
 			cal = Calendar.getInstance();
 			while(cal.before(end)){	
 				try{
-					Thread.sleep(5000);
+					Thread.sleep(30000);
 					Twitter twitter = TwitterFactory.getSingleton();
 					StatusUpdate statusUpdate = new StatusUpdate("2013 HACKATHON @ToppersPizza");
 					statusUpdate.setLocation(new GeoLocation(42.83918333333, -88.74238333333));
