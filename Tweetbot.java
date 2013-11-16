@@ -39,7 +39,7 @@ public class Tweetbot{
 				try{
 					Thread.sleep(60000);
 					Twitter twitter = TwitterFactory.getSingleton();
-					StatusUpdate statusUpdate = new StatusUpdate("2013 HACKATHON @ToppersPizza");
+					StatusUpdate statusUpdate = new StatusUpdate("#UWWHack <3");
 					statusUpdate.media(new File("xKE07.jpg"));
 					statusUpdate.setLocation(new GeoLocation(42.83918333333, -88.74238333333));
 					System.out.println("[TWEETBOT]Sending tweet with image");
@@ -63,7 +63,7 @@ public class Tweetbot{
 				try{
 					Thread.sleep(30000);
 					Twitter twitter = TwitterFactory.getSingleton();
-					StatusUpdate statusUpdate = new StatusUpdate("2013 HACKATHON @ToppersPizza");
+					StatusUpdate statusUpdate = new StatusUpdate("#UWWHack <3");
 					statusUpdate.setLocation(new GeoLocation(42.83918333333, -88.74238333333));
 					System.out.println("[TWEETBOT]Sending tweet without image");
 					twitter.updateStatus(statusUpdate);
